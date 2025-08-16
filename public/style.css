@@ -1,0 +1,22 @@
+*{box-sizing:border-box}
+body{margin:0; font-family:system-ui,Arial,sans-serif; background:#0b1220; color:#e9eef7}
+header{padding:16px; text-align:center; background:#0e1730; border-bottom:1px solid #223}
+.wrap{max-width:1000px; margin:0 auto; padding:16px}
+.panel{background:#0e1730; border:1px solid #223; border-radius:12px; padding:12px; margin-bottom:12px}
+.hidden{display:none}
+.sub{opacity:.8}
+.table{background:#0d3b2e; border:2px solid #124f3b}
+.pile{display:flex; gap:8px; flex-wrap:wrap; min-height:108px; padding:8px; background:rgba(0,0,0,.15); border-radius:10px; border:1px dashed rgba(255,255,255,.2)}
+.card{width:64px; height:92px; border-radius:8px; background:#fff; color:#111; display:flex; align-items:center; justify-content:center; font-weight:700; border:2px solid #0002; box-shadow:0 4px 10px rgba(0,0,0,.25)}
+.card.red{color:#c21414}
+.card.back{background:linear-gradient(135deg,#213,#536); color:#89a; border-color:#89a4}
+.actions button, .betPanel button{padding:8px 12px; border:0; border-radius:8px; background:#1d61ff; color:#fff; font-weight:700; cursor:pointer; margin-left:6px}
+input{padding:8px 10px; border-radius:8px; border:1px solid #334; background:#0e1730; color:#e9eef7}
+.seats{display:grid; grid-template-columns: repeat(5, 1fr); gap:10px; margin-top:12px}
+.seat{background:rgba(0,0,0,.12); border:1px solid #123; padding:8px; border-radius:10px}
+.seat h4{margin:4px 0 6px}
+.badge{display:inline-block; padding:2px 6px; border-radius:999px; background:#102b20; font-size:12px}
+.phase{margin:6px 0 0; font-weight:700}
+.messages{min-height:60px}
+.turnActions button{margin-right:6px}
+.topbar{display:flex; align-items:center; justify-content:space-between}
