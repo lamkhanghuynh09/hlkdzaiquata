@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Blackjack Online – Tiền ảo</title>
+  <link rel="stylesheet" href="styles.css" />
+  <script src="/socket.io/socket.io.js"></script>
+  <script defer src="client.js"></script>
+</head>
+<body>
+<header>
+  <h1>🎲 Blackjack Online – Tiền ảo</h1>
+  <div class="sub">Chỉ giải trí • Không đổi thưởng • 18+</div>
+</header>
+
+<main class="wrap">
+  <section id="loginBox" class="panel">
+    <input id="nameInput" placeholder="Nhập tên hiển thị..." maxlength="24"/>
+    <button id="joinBtn">Vào game</button>
+  </section>
+
+  <section id="gameBox" class="hidden">
+    <div class="topbar panel">
+      <div>Xin chào, <strong id="playerName"></strong> • Chip: <strong id="playerChips"></strong></div>
+      <div class="actions">
+        <button id="sitBtn">Ngồi ghế</button>
+        <button id="standUpBtn">Rời ghế</button>
+        <button id="startBettingBtn">Bắt đầu đặt cược</button>
+      </div>
+    </div>
+
+    <div class="table panel">
+      <h3>Nhà cái</h3>
+      <div id="dealerPile" class="pile"></div>
+      <div id="phase" class="phase"></div>
+
+      <div class="seats">
+        <!-- Ghế sẽ render động -->
+      </div>
+    </div>
+
+    <div class="panel betPanel">
+      <div>
+        <label>Cược: </label>
+        <input id="betInput" type="number" min="10" step="10" value="50" />
+        <button id="placeBetBtn">Đặt cược</button>
+        <button id="dealBtn">Chia bài</button>
+      </div>
+      <div class="turnActions">
+        <button id="hitBtn">Rút (Hit)</button>
+        <button id="standBtn">Dừng (Stand)</button>
+      </div>
+    </div>
+
+    <div id="messages" class="messages panel"></div>
+  </section>
+</main>
+
+<footer>© 2025 – Mô phỏng giải trí, không cờ bạc đổi thưởng.</footer>
+</body>
+</html>
